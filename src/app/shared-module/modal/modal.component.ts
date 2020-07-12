@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ControllerService } from 'src/app/controller.service';
-import { ControllerServerItem } from 'src/app/interfaces/controller-item.interface';
+import { ControllerService } from '../../services/controller.service';
+import { ControllerServerItem } from '../../interfaces/controller-item.interface';
 
 @Component({
   selector: 'app-modal',

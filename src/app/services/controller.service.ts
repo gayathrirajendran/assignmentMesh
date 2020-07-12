@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ControllerItem, ControllerServerItem } from './interfaces/controller-item.interface';
+import { ControllerItem, ControllerServerItem } from '../interfaces/controller-item.interface';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({

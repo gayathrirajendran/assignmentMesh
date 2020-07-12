@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModuleModule } from './shared-module/shared-module.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ControllerService } from './controller.service';
+import { ControllerService } from './services/controller.service';
 import { DatagridComponent } from './datagrid/datagrid.component';
 import { ModalComponent } from './shared-module/modal/modal.component';
 import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';

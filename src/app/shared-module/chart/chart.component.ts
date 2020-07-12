@@ -1,9 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Chart } from 'angular-highcharts';
-import { ControllerService } from 'src/app/controller.service';
-import { ControllerServerItem } from 'src/app/interfaces/controller-item.interface';
+import { ControllerServerItem } from '../../interfaces/controller-item.interface';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { ControllerService } from '../../services/controller.service';
 
 @Component({
   selector: 'app-chart',

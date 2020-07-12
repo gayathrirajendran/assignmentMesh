@@ -1,5 +1,5 @@
 import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
-import { ControllerService } from '../controller.service';
+import { ControllerService } from '../services/controller.service';
 import { ControllerServerItem } from '../interfaces/controller-item.interface';
 
 @Component({

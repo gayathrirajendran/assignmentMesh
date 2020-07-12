@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { ControllerService } from '../controller.service';
+import { ControllerService } from '../services/controller.service';
 import { Subject } from 'rxjs';
 import { takeUntil, take } from 'rxjs/operators';
 
