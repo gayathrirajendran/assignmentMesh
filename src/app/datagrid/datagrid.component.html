@@ -1,0 +1,56 @@
+<div class="container controller-server-list">
+  <div class="row header-row">
+    <div class="col-sm" [ngClass]="{ 'text-right': i === 0 }" *ngFor="let colName of colNames; let i = index">
+      {{ colName }}
+    </div>
+  </div>
+  <ng-container *ngIf="listItems?.length > 0; then dgTemplate else noItemsTemplate"></ng-container>
+
+  <ng-template #noItemsTemplate>
+    <div>
+      No items
+    </div>
+  </ng-template>
+
+  <ng-template #dgTemplate>
+    <ng-container *ngFor="let item of listItems; let index = index">
+      <div class="row">
+        <div class="col-sm text-right">
+          {{ index + 1 }}
+        </div>
+        <div class="col-sm">
+          {{ item.serverName }}
+        </div>
+        <div class="col-sm">
+          {{ item.noOfCpus }}
+        </div>
+        <div class="col-sm">
+          {{ item.memory }}
+        </div>
+        <div class="col-sm">
+          {{ item.storage }}
+        </div>
+        <div class="col-sm">
+          {{ item.ipAddress }}
+        </div>
+        <div class="col-sm">
+          {{ item.networkSpeed }}
+        </div>
+        <div class="col-sm location">
+          {{ item.location }}
+        </div>
+
+        <div class="col-sm actions">
+          <div>
+            <span><a [routerLink]="" (click)="editItem(index)">Edit</a></span>
+            <span><a [routerLink]="" (click)="deleteItem(index)">Delete</a></span>
+          </div>
+          <div>
+            <a [routerLink]="" (click)="openModal(index)">View Usage</a>
+          </div>
+        </div>
+
+      </div>
+    </ng-container>
+  </ng-template>
+</div>

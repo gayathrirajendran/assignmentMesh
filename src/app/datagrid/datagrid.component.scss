@@ -1,0 +1,12 @@
+.row.header-row {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.controller-server-list {
+  border: 1px solid #ccc;
+  .col-sm {
+  border-right: 1px solid #ccc;
+  }
+}
